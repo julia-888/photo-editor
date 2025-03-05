@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "draft-expo-2",
-    "slug": "draft-expo-2",
+    "name": "photo-editor",
+    "slug": "photo-editor",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lime8.draftexpo2"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3963007d-a5f9-49e0-8c39-1d25c442221c"
+      }
     }
   }
 }
