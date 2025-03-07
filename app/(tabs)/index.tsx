@@ -126,7 +126,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#25292e",
-    // justifyContent: "center",
     alignItems: "center",
   },
   text: {
@@ -151,7 +150,7 @@ const styles = StyleSheet.create({
   },
   optionsContainer: {
     position: 'absolute',
-    bottom: 80,
+    bottom: 60,
   },
   optionsRow: {
     alignItems: 'center',
