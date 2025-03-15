@@ -9,7 +9,7 @@ import domtoimage from 'dom-to-image';
 import Button from "@/components/Home/Button";
 import ImageViewer from "@/components/Home/imageViewer";
 import IconButton from '@/components/Home/IconButton';
-import CircleButton from '@/components/Home/CircleButton';
+import CircleButton from '@/components/Common/CircleButton';
 import EmojiPicker from '@/components/Home/EmojiPicker';
 import EmojiList from '@/components/Home/EmojiList';
 import EmojiSticker from '@/components/Home/EmojiSticker';

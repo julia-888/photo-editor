@@ -1,29 +1,37 @@
 import { Text, View, StyleSheet, SectionList, StatusBar } from "react-native";
+import CreateEmojiInfo from "@/components/Smiles/CreateEmojiInfo";
+import CircleButton from '@/components/Common/CircleButton';
+import { useState } from "react";
+
 
 export default function AboutScreen() {
   const DATA = [
     {
-      title: 'Main dishes',
+      title: 'Happy',
       data: [{emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}],
-    },    
-    // {
-    //   title: 'Sides',
-    //   data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
-    // },
-    // {
-    //   title: 'Drinks',
-    //   data: ['Water', 'Coke', 'Beer'],
-    // },
-    // {
-    //   title: 'Desserts',
-    //   data: ['Cheese Cake', 'Ice Cream'],
-    // },
+    },
+    {
+      title: 'Sad',
+      data: [{emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}],
+    },
+    {
+      title: 'Animals',
+      data: [{emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}],
+    },
+    {
+      title: 'Symbolic',
+      data: [{emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}, {emoji: `\u{1F600}`, description: "dfjjfjf"}],
+    },
   ];
 
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+
+  const onAddInfo = () => {
+    setIsModalVisible(true);
+  };  
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>About screen</Text>
       <SectionList
         showsVerticalScrollIndicator={false}
         sections={DATA}
@@ -37,6 +45,9 @@ export default function AboutScreen() {
           <Text style={styles.header}>{title}</Text>
         )}
       />
+      <CircleButton onPress={onAddInfo} />
+
+      { isModalVisible && <CreateEmojiInfo />}
     </View>
   );
 }
