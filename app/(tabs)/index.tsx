@@ -6,13 +6,13 @@ import { useState, useRef } from 'react';
 import { captureRef } from 'react-native-view-shot';
 import domtoimage from 'dom-to-image';
 
-import Button from "@/components/Button";
-import ImageViewer from "@/components/imageViewer";
-import IconButton from '@/components/IconButton';
-import CircleButton from '@/components/CircleButton';
-import EmojiPicker from '@/components/EmojiPicker';
-import EmojiList from '@/components/EmojiList';
-import EmojiSticker from '@/components/EmojiSticker';
+import Button from "@/components/Home/Button";
+import ImageViewer from "@/components/Home/imageViewer";
+import IconButton from '@/components/Home/IconButton';
+import CircleButton from '@/components/Home/CircleButton';
+import EmojiPicker from '@/components/Home/EmojiPicker';
+import EmojiList from '@/components/Home/EmojiList';
+import EmojiSticker from '@/components/Home/EmojiSticker';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
